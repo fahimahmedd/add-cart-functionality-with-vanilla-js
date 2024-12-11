@@ -1,5 +1,7 @@
 .product-detail{
-    padding-top: 30px;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
 }
 .product-thumbnail{
     img{
@@ -50,7 +52,7 @@
      .type-title{
         font-size: 14px;
         color: $textColor;
-        font-weight: 300;
+        font-weight: 400;
      }
     }
 }

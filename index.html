@@ -82,11 +82,11 @@
                                 <h5>Wrist Size</h5>
                                 <div class="size-box">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="product-size" id="size-s" checked>
+                                        <input class="form-check-input" type="radio" name="product-size" id="size-s">
                                         <label class="form-check-label" for="size-s"> <span>S</span> $69 </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="product-size" id="size-m">
+                                        <input class="form-check-input" type="radio" name="product-size" id="size-m" checked>
                                         <label class="form-check-label" for="size-m"> <span>M</span> $79 </label>
                                     </div>
                                     <div class="form-check">
@@ -107,7 +107,7 @@
                                     <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
                                 </div>
 
-                                <button class="c-button">
+                                <button class="c-button"> 
                                     Add to Cart
                                 </button>
                                 <div class="favourite-listing">
@@ -124,19 +124,59 @@
 
 
     <!-- Cart Modal Preview  -->
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal fade cart-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="cartModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            ...
+                <table class="cart-modal-table">
+                    <thead>
+                        <tr>
+                            <th class="col-35">Item</th>
+                            <th class="col-auto text-center">Color</th>
+                            <th class="col-auto text-center">Size</th>
+                            <th class="col-auto text-center">Qnt</th>
+                            <th class="col-auto text-end">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="d-flex align-items-center"> <div class="product-prev-img"><img src="./images/product/p-1.png" alt=""></div> <span>Classy Modern Smart watch</span></td>
+                            <td class="text-center">Black</td>
+                            <td class="text-center"> <strong>XL</strong> </td>
+                            <td class="text-center"><strong>1</strong></td>
+                            <td class="text-end"><strong>$99.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex align-items-center"> <div class="product-prev-img"><img src="./images/product/p-2.png" alt=""></div> <span>Classy Modern Smart watch</span></td>
+                            <td class="text-center">Black</td>
+                            <td class="text-center"> <strong>XL</strong> </td>
+                            <td class="text-center"><strong>1</strong></td>
+                            <td class="text-end"><strong>$99.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex align-items-center"> <div class="product-prev-img"><img src="./images/product/p-3.png" alt=""></div> <span>Classy Modern Smart watch</span></td>
+                            <td class="text-center">Black</td>
+                            <td class="text-center"> <strong>XL</strong> </td>
+                            <td class="text-center"><strong>1</strong></td>
+                            <td class="text-end"><strong>$99.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex align-items-center"> <strong>Total</strong> </td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"><strong>4</strong></td>
+                            <td class="text-end" style="font-size: 20px;"><strong>$369.00</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="modal-outline-btn" data-bs-dismiss="modal">Continue Shopping</button>
+            <button type="button" class="modal-btn">Checkout</button>
             </div>
         </div>
         </div>
