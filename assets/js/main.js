@@ -105,9 +105,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="product-prev-img"><img src="${
             product.image
           }" alt="Product image"></div>
-          <span>${product.title}</span>
+          <span class="p-title-wrap">${product.title}</span>
         </td>
-        <td class="text-center">${product.color}</td>
+        <td class="text-center"><strong>${product.color}</strong></td>
         <td class="text-center"><strong>${product.size}</strong></td>
         <td class="text-center"><strong>${product.quantity}</strong></td>
         <td class="text-end"><strong>$${product.totalPrice.toFixed(

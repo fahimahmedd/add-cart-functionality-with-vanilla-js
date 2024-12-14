@@ -45,6 +45,9 @@
     font-size: 14px;
     color: $black;
   }
+  .p-title-wrap {
+    @include text-ellips;
+  }
   tr {
     border-bottom: 1px solid $border;
   }
@@ -76,6 +79,7 @@
   color: $textColor;
   border: 1px solid $border;
   display: inline-block;
+  font-size: 14px;
   cursor: pointer;
   &:hover {
     border: 1px solid #9c9b9b;
@@ -84,4 +88,5 @@
 }
 .modal-btn {
   @include c-button;
+  font-size: 14px;
 }

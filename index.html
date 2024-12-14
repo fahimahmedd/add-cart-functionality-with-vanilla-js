@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Softnio </title>
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-
     <!----- Product Detail ----->
     <section>
-        <div class="product-detail">
+        <div class="product-detail py-3">
             <div class="container">
                 <div class="product-detail-wrapper">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="product-thumbnail">
-                                <img src="./images/product/p-1.png" alt="" id="productImage">
+                                <img src="./assets/images/product/p-1.png" alt="" id="productImage">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="product-block">
                                 <h2 class="product-title"> Classy Modern Smart Watch </h2>
                                 <div class="product-review-box">
@@ -63,26 +62,29 @@
                                     <div class="color-box">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="product-color"
-                                                data-image="./images/product/p-1.png" data-color="Purple" id="purple"
-                                                checked>
+                                                data-image="./assets/images/product/p-1.png" data-color="Purple"
+                                                id="purple" checked>
                                             <label class="form-check-label" for="purple"> <span
                                                     style="background-color: #816BFF;"></span> </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="product-color"
-                                                data-image="./images/product/p-2.png" data-color="Accent" id="accent">
+                                                data-image="./assets/images/product/p-2.png" data-color="Accent"
+                                                id="accent">
                                             <label class="form-check-label" for="accent"> <span
                                                     style="background-color: #1FCEC9;"></span> </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="product-color"
-                                                data-image="./images/product/p-3.png" data-color="Blue" id="blue">
+                                                data-image="./assets/images/product/p-3.png" data-color="Blue"
+                                                id="blue">
                                             <label class="form-check-label" for="blue"> <span
                                                     style="background-color: #4B97D3;"></span> </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="product-color"
-                                                data-image="./images/product/p-4.png" data-color="Black" id="black">
+                                                data-image="./assets/images/product/p-4.png" data-color="Black"
+                                                id="black">
                                             <label class="form-check-label" for="black"> <span
                                                     style="background-color: #3B4747;"></span></label>
                                         </div>
@@ -139,7 +141,6 @@
         </div>
     </section>
 
-
     <!-- Cart Modal Preview  -->
     <div class="modal fade cart-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -180,21 +181,19 @@
         </div>
     </div>
 
-
     <!--- Checkout Sticky Button --->
     <button class="checkout-sticky" data-bs-toggle="modal" data-bs-target="#cartModal">
-        <ion-icon name="cart"></ion-icon>  Checkout <span class="checkout-quantity">2</span>
+        <ion-icon name="cart"></ion-icon> Checkout <span class="checkout-quantity">2</span>
     </button>
 
-
     <!-- Script Link
-    ------------------------->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+        ------------------------->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- ionicon CDN -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
